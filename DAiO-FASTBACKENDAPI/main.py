@@ -138,13 +138,8 @@ async def get_login_params(loginparams: LoginParamTypes):
         writer = csv.writer(file)
         writer.writerow(header)
         writer.writerows(rows)
-      
-
-
     
     return {"Posted":header}
-          
-
 
 async def ai_automated_vote(avgPersona, wallet, proposalTitle, proposalId):
   with open("./AItoUserData1.csv", 'r') as csvfile:
